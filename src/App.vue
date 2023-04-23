@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <site-header></site-header>
+  </div>
+  <router-view/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SiteHeader from '@/components/SiteHeader.vue';
 
 export default {
-  name: 'App',
+  name: 'HomePage',
   components: {
-    HelloWorld
-  }
+    SiteHeader,
+  },
+  
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import '@/assets/css/bootstrap/bootstrap.css';
+@import '@/assets/css/animate.css';
+@import '@/assets/css/bootstrap.css';
+@import '@/assets/css/font-awesome.css';
+@import '@/assets/css/templatemo-misc.css';
+@import '@/assets/css/templatemo-style.css';
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
+.fade-enter-to,
+.fade-leave {
+  opacity: 0;
+}
+
 </style>
