@@ -3,8 +3,8 @@
    <header class="site-header container-fluid">
             <div class="top-header">
                 <div class="logo col-md-6 col-sm-6">
-                    <h1><router-link to="/"><em>Pron</em>Hub</router-link></h1>
-                    <span>這是一個18+論壇</span>
+                    <h1><router-link to="/"><em>Talk</em>Circle</router-link></h1>
+                    <span>這是一個綜合型論壇</span>
                 </div> <!-- /.logo -->
                  <div class="auth-links">
                     <li>
